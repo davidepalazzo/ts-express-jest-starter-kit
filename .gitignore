@@ -102,3 +102,27 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Coverage directory used by tools like istanbul
+coverage
+
+# dotenv environment variables file
+.env
+
+# IntelliJ
+.idea/
+msl-website.iml
+
+# dist
+dist/*.js
+dist/**/*.*
+
+# DS_Store
+*.DS_Store
+
+# Generated schema used in typescript type generation
+modules/graphql-api/schema.json
+
+# Add any directories, files, or patterns you don't want to be tracked by version control
+**/.idea
+.cache
