@@ -1,4 +1,4 @@
-import express from 'express'
+import express, { Request, Response } from 'express'
 import 'express-async-errors'
 import { json } from 'body-parser'
 
@@ -13,7 +13,7 @@ app.use(json())
 app.use(exampleRouter)
 app.use(ascyncExampleRouter)
 
-app.all(ROUTE_PATHS.ALL, async (req, res) => {
+app.all(ROUTE_PATHS.ALL, async (req: Request, res: Response) => {
   res.status(404).send('<h1>404 - Page not found</h1>')
 })
 
